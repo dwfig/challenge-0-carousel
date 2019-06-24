@@ -22,6 +22,16 @@ header a {
     height: 50vh;
     overflow: hidden;
 }
+.image{
+  position:absolute;
+  left:0;
+  transition: opacity 1s ease-in-out;
+}
+
+.image:hover{
+  opacity: 0;
+}
+
 .hero-image .image {
     background-position: center center;
     background-repeat: no-repeat;
@@ -33,6 +43,7 @@ header a {
     bottom: 0;
     left: 0;
     right: 0;
+    transition: background-image 1s ease-in-out;
 }
 .hero-image h1, .hero-image h2 {
     color: #FAF9FA;
@@ -46,6 +57,7 @@ header a {
 .hero-image h2 {
     margin: 1rem 4%;
 }
+
 main {
     width: 96%;
     margin: 1rem auto;
